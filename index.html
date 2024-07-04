@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox challenge 2</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            padding: 30px 30px 30px 30px;
+            line-height: 1.4;
+        }
+
+        .flex-container{
+            margin-top: 40px;
+            margin-left: 20px;
+            margin-right: 20px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 100px;
+            justify-content: space-around;
+            /* flex-wrap: wrap; */
+        }
+
+        .flexcontainer1, .flexcontainer2{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            justify-content: space-around;
+            padding-left: 20px;
+            padding-right: 30px;
+            /* flex-wrap: wrap; */
+        }
+
+        .flex-item{
+            background-color: white;
+            box-shadow: grey;
+            width: 25%;
+            height: 100%;
+            /* padding: 4px; */
+            border-radius: 3px;
+            color: black;
+            border: 0.5px solid black;
+            align-self: center;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+            word-wrap: break-word;
+            
+        }
+
+        .flex-item:hover{
+            transform: translateY(-10px);
+        }
+
+        img{
+            width: 100%;
+        }
+
+        button{
+            margin-left: 19%;
+            margin-bottom: 10%;
+            border-radius: 3px;
+            font-size: x-large;
+            background-color: rgb(0, 102, 255);
+            cursor: pointer;
+            color: white;
+            padding: 10px 40px 10px 40px;
+            transition: all 0.3s ease;
+
+        }
+
+        button:hover{
+            /* transform: scale(1.03); */
+            background-color: blue;
+            border-color: blue;
+        }
+
+        footer {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+    }
+
+    header{
+        text-align: center;
+        /* padding: 3px; */
+        font-size: xxx-large;
+        font-weight: bolder;
+        margin-bottom: -25px;
+    }
+    </style>
+</head>
+
+<body>
+    <header>Places to visit in India</header><br><hr>
+    <div class="flex-container">
+        <div class="flexcontainer1">
+            <div class="flex-item">
+                <div><img src="tajmahal.jpeg" alt="Image"></div>
+                <p style="padding-left: 10%; font-size: xx-large;"><b>Taj Mahal, Agra, India </b><br><p style="padding-left: 10%; font-size: x-large;">Explore the timeless beauty and intricate craftsmanship of the Taj Mahal, India's iconic monument of love.</p></p>
+                <a href="https://en.wikipedia.org/wiki/Taj_Mahal" target="_blank"><button>Read more</button></a>
+            </div>
+            <div class="flex-item">
+                <div><img src="jaipur.jpg" alt="Image"></div>
+                <p style="padding-left: 10%; font-size: xx-large;"><b>Jaipur, Rajasthan, India </b><br><p style="padding-left: 10%; font-size: x-large;">Jaipur boasts vibrant culture, majestic forts, and rich history with intricate architecture, epitomizing Rajasthan's royal heritage and charm.</p></p>
+                <a href="https://en.wikipedia.org/wiki/Jaipur" target="_blank"><button>Read more</button></a>
+            </div>
+            <div class="flex-item">
+                <div><img src="varanasi.jpg" alt="Image"></div>
+                <p style="padding-left: 10%; font-size: xx-large;"><b>Varanasi, Uttar Pradesh, India </b><br><p style="padding-left: 10%; font-size: x-large;">Experience the spiritual heart of India at Varanasi, where ancient temples and serene river ghats offer a glimpse into Hindu traditions.</p></p>
+                <a href="https://en.wikipedia.org/wiki/Varanasi" target="_blank"><button>Read more</button></a>
+            </div>
+        </div>
+        <div class="flexcontainer1">
+            <div class="flex-item">
+                <div><img src="keralabackwaters.jpg" alt="Image"></div>
+                <p style="padding-left: 10%; font-size: xx-large;"><b>Kerala backwaters, Kerala, India </b><br><p style="padding-left: 10%; font-size: x-large;">Cruise Kerala's serene backwaters, where lush landscapes and tranquil waters create a picturesque natural retreat.</p></p>
+                <a href="https://en.wikipedia.org/wiki/Kerala_backwaters" target="_blank"><button>Read more</button></a>
+            </div>
+            <div class="flex-item">
+                <div><img src="leh.jpg" alt="Image"></div>
+                <p style="padding-left: 10%; font-size: xx-large;"><b>Leh, J&K, India </b><br><p style="padding-left: 10%; font-size: x-large;">Discover Leh-Ladakh's rugged landscapes, ancient monasteries, and breathtaking Himalayan vistas, offering an adventure in untouched natural beauty and spirituality.</p></p>
+                <a href="https://en.wikipedia.org/wiki/Leh" target="_blank"><button>Read more</button></a>
+            </div>
+            <div class="flex-item">
+                <div><img src="udaipur.jpg" alt="Image"></div>
+                <p style="padding-left: 10%; font-size: xx-large;"><b>Udaipur, Rajasthan, India </b><br><p style="padding-left: 10%; font-size: x-large;">Explore Udaipur's romantic charm with lakeside palaces reflecting Rajasthan's regal heritage and scenic beauty.</p></p>
+                <a href="https://en.wikipedia.org/wiki/Udaipur" target="_blank"><button>Read more</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    &copy; 2024, Meghraj | All rights reserved.
+</footer>
+</html>
